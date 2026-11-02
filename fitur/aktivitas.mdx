@@ -1,31 +1,68 @@
 ---
 title: "Activity"
-description: "Transaction history and report export."
+description: "Transaction history, filters, and report export."
 ---
+
+<Warning>
+  Cirata runs on **Arc Testnet**. Funds shown have no real value.
+</Warning>
 
 # Activity
 
+The **Activity** page shows your full transaction history for your Circle wallet on Arc Testnet.
+
 ## Transaction History
 
-The **Activity** menu displays all your wallet transactions with information:
+Each entry displays:
 
-- Type (Send/Receive)
-- Amount and token
-- Status
-- Date
-- Direction (inbound/outbound)
-- Recipient/sender address
+- **Type** — Send (TRANSFER) or Receive.
+- **Amount** — Token value.
+- **Token** — USDC or EURC with logo.
+- **Status** — Success, Failed, or pending state.
+- **Date** — Creation timestamp.
+- **Direction** — Inbound or Outbound.
+- **Destination / Source** — The other party's address.
+- **Category** — User-assigned tag (if set).
 
 ## Filters
 
-- **Token** — USDC, EURC, or All
-- **Direction** — Inbound, Outbound, or All
-- **Search** — Search by address or amount
+Narrow your history with the filter bar:
+
+- **Token** — All, USDC, or EURC.
+- **Direction** — All, Inbound, or Outbound.
+- **Category** — All or a specific category found in your transactions.
+- **Search** — Free-text search by address or token symbol.
+
+<Tip>
+  Filters combine. For example, search "0x1234" with token USDC and direction Outbound to find one specific transfer.
+</Tip>
+
+## Views
+
+Toggle between two tabs at the top:
+
+- **Transactions** — Your on-chain transfer history.
+- **Audit Log** — Internal audit events including pending approvals.
 
 ## Export
 
-- **Export CSV** — Download as CSV file
-- **Export Excel** — Download as CSV with BOM (can be opened in Excel)
-- **Export PDF** — Print via browser print dialog
+Three export options are available:
 
-> ⚠️ Transaction data comes from Arc Testnet. It has no real value.
+- **Export CSV** — Downloads a standard CSV file.
+- **Export Excel** — Downloads a CSV with BOM so Excel opens it correctly.
+- **Export PDF** — Opens the browser print dialog for PDF export.
+
+## Empty State
+
+If no transactions exist yet, the page shows "No activity data available." Make your first transfer to populate the list.
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Balance & Treasury" icon="wallet" href="/fitur/saldo">
+    Check your current balance.
+  </Card>
+  <Card title="Transfer" icon="arrow-right-arrow-left" href="/fitur/transfer">
+    Send tokens to another address.
+  </Card>
+</CardGroup>

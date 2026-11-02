@@ -3,28 +3,68 @@ title: "Transfer"
 description: "How to send USDC or EURC from Cirata."
 ---
 
+<Warning>
+  Cirata runs on **Arc Testnet**. Funds shown have no real value.
+</Warning>
+
 # Transfer
+
+The **Transfer** page lets you send USDC or EURC to any valid 0x address on Arc Testnet.
 
 ## Transfer Steps
 
-1. Open the **Transfer** menu
-2. Select token: **USDC** or **EURC**
-3. Select a contact from the Address Book (optional) or enter the recipient address `0x...`
-4. Enter the amount (click **MAX** to send all balance)
-5. Fill in category/memo (optional)
-6. Click **Send**
-7. Confirm in the modal that appears
+<Steps>
+  <Step title="Select token">
+    Choose **USDC** or **EURC** using the toggle buttons at the top.
+  </Step>
+  <Step title="Enter destination">
+    Type a valid 0x address, or pick one from the **Address Book** dropdown.
+  </Step>
+  <Step title="Enter amount">
+    Type the amount. Click **MAX** to send your entire balance.
+  </Step>
+  <Step title="Add details (optional)">
+    Select a category and write a memo for your records.
+  </Step>
+  <Step title="Send and confirm">
+    Click **Send**, review the summary modal, and confirm.
+  </Step>
+</Steps>
+
+## Summary Panel
+
+The right-hand panel shows a live summary before you send:
+
+- **From** — Your wallet address.
+- **To** — Destination address.
+- **Amount** — Token and value.
+- **Network** — Arc Testnet.
+- **Total** — Final amount.
 
 ## Additional Features
 
-- **Voice Command** — Voice input to auto-fill the transfer form.
-- **Address Book** — Save favorite addresses in Treasury → Address Book.
-- **Spending Limits** — Set spending limits in Treasury → Spending Limits.
+- **Voice Command** — Use the microphone button to fill the form by speaking.
+- **Address Book** — Save and reuse recipient addresses.
+- **Spending Limits** — Set per-token caps to prevent overspending.
 
-## Validation
+## Validation Rules
 
-- Recipient address must be valid (format `0x` + 40 hex characters).
-- Amount must be > 0 and not exceed balance.
-- Login required to send.
+- Destination address must match the format `0x` followed by 40 hex characters.
+- Amount must be greater than 0.
+- Amount must not exceed your available balance.
+- You must be logged in to send.
 
-> ⚠️ Transactions are performed on **Arc Testnet**. Testnet funds have no real value.
+<Tip>
+  The Send button stays disabled until all fields are valid.
+</Tip>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Balance & Treasury" icon="wallet" href="/fitur/saldo">
+    Check your balance before sending.
+  </Card>
+  <Card title="Activity" icon="clock-rotate-left" href="/fitur/aktivitas">
+    Review your sent transactions.
+  </Card>
+</CardGroup>

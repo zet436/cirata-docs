@@ -1,27 +1,53 @@
 ---
 title: "Wallet Security"
-description: "How Cirata manages user wallet security."
+description: "How Cirata manages wallet security on Arc Testnet."
 ---
+
+<Warning>
+  Cirata runs on **Arc Testnet**. Funds shown have no real value.
+</Warning>
 
 # Wallet Security
 
-## Security Model
+Your wallet in Cirata is managed securely so you never handle private keys or seed phrases.
 
-- **No MetaMask** — Wallets are managed server-side via Circle Developer-Controlled Wallets.
-- **Auto-provision** — Wallet is automatically created on Google login. No seed phrase is stored in the browser.
-- **Server-side policy** — Transaction validation is performed on the server, not the client.
-- **Session-based** — Wallet access is tied to the login session.
+## How Your Wallet Works
+
+- Wallets are provided through **Circle Developer-Controlled Wallets**, so you do not manage a seed phrase or browser extension.
+- Your wallet is created automatically when you log in with Google. No manual setup is needed.
+- The wallet address is displayed in the Treasury and Settings pages for receiving funds.
 
 ## Network
 
-- **Arc Testnet** (Chain ID 5042002)
-- RPC: `https://rpc.testnet.arc.io`
-- Gas fee paid with USDC (native gas token on Arc)
+- Cirata runs on **Arc Testnet**.
+- Gas fees on Arc are paid with USDC.
+
+## Stay Safe
+
+- Always double-check the recipient address before sending.
+- Send a small test amount first when sending to a new address.
+- Never share access to your Google account.
+- Log out on shared or public devices.
+- Set Spending Limits to cap individual transfers.
+- Verify transactions on the Arc block explorer after sending.
 
 ## Important Notes
 
-- Funds on Arc Testnet **have no real value**.
-- Do not send assets from other networks to Cirata addresses — it may cause loss of funds.
-- Circle API key and entity secret are stored server-side, not exposed to the browser.
+- Funds on Arc Testnet **have no real value**. Do not treat testnet tokens as real assets.
+- Do not send assets from other networks to your Cirata address — this may result in loss of funds.
+- Cirata is in a development phase. Always verify transactions on [Arc Explorer](https://testnet.arcscan.app/) before considering them final.
 
-> Cirata is in development phase. Always verify transactions on [Arc Explorer](https://testnet.arcscan.app) before considering them final.
+<Tip>
+  You can view your wallet on the Arc Testnet block explorer from the Treasury or Settings page.
+</Tip>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Quick Start" icon="rocket" href="/quickstart">
+    Get started in five steps.
+  </Card>
+  <Card title="FAQ" icon="circle-question" href="/faq">
+    Common questions and answers.
+  </Card>
+</CardGroup>

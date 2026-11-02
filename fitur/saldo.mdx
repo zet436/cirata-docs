@@ -1,29 +1,89 @@
 ---
 title: "Balance & Treasury"
-description: "How to view and manage USDC/EURC balances in Cirata."
+description: "How to view and manage USDC/EURC balance in Cirata."
 ---
+
+<Warning>
+  Cirata runs on **Arc Testnet**. Funds shown have no real value.
+</Warning>
 
 # Balance & Treasury
 
-## Treasury Page
+The **Treasury** page is your financial overview. It shows your holdings, cash flow, and wallet details in one place.
 
-The **Treasury** menu displays:
+## Holdings
 
-- **Holdings** — Real-time USDC and EURC balances from on-chain.
-- **Total Inflow** — Total incoming funds.
-- **Total Outflow** — Total outgoing funds.
-- **Charts** — Allocation (pie), Cash Flow (bar), Performance (line).
-- **Wallet Account** — Wallet address, connected email, status.
-- **Receive** — QR code and address for receiving funds.
+A table listing each asset you hold:
 
-## Export
+| Column | Description |
+|---|---|
+| Asset | Token name and logo (USDC, EURC) |
+| Balance | Current on-chain balance |
+| Share % | Percentage of total portfolio |
+| Inflow | Total received |
+| Outflow | Total sent |
+| Network | Arc Testnet |
+| Actions | Send or Receive |
 
-Click **Export CSV** to download transaction history as CSV.
+## Summary Cards
+
+Three cards at the top give a quick snapshot:
+
+- **Assets Held** — Number of distinct tokens.
+- **Total Inflow** — Sum of all inbound transfers.
+- **Total Outflow** — Sum of all outbound transfers.
+
+## Charts
+
+Three visualizations help you understand your treasury over time:
+
+- **Allocation (pie)** — Distribution of USDC vs EURC by amount.
+- **Cash Flow (bar)** — Inbound vs outbound totals.
+- **Treasury Performance (line)** — Balance history reconstructed from transactions.
+
+<Tip>
+  Hover over chart data points for exact values.
+</Tip>
+
+## Wallet Account
+
+The Wallet Account panel shows:
+
+- **Network Address** — Your 0x wallet address with a copy button.
+- **Linked Email** — The Google email tied to this wallet.
+- **Status** — Active / Arc Live indicator.
+- **Show QR for Receiving** — Displays a QR code and address for receiving funds.
+- **View on Explorer** — Opens your address on the Arc Testnet block explorer.
 
 ## Receive Assets
 
-1. Click **Show QR for Receiving**
-2. The QR code and wallet address will appear
-3. Share the address or QR with the sender
+1. Click **Show QR for Receiving**.
+2. A QR code and your wallet address appear.
+3. Share the address or QR with the sender.
 
-> ⚠️ Make sure the sender uses the **Arc Testnet** network. Sending from other networks may cause loss of funds.
+<Warning>
+  Make sure the sender uses the **Arc Testnet** network. Sending from other networks may result in loss of funds.
+</Warning>
+
+## Treasury Controls
+
+Three sub-sections are accessible from the Treasury page:
+
+- **Spending Limits** — Set per-token transfer caps.
+- **Address Book** — Save and manage recipient addresses.
+- **Approval Policy** — Shows the active approval policy status.
+
+## Export
+
+Click **Export CSV** to download your transaction history as a CSV file.
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Transfer" icon="arrow-right-arrow-left" href="/fitur/transfer">
+    Send USDC or EURC to another address.
+  </Card>
+  <Card title="Activity" icon="clock-rotate-left" href="/fitur/aktivitas">
+    Filter and export your full transaction history.
+  </Card>
+</CardGroup>

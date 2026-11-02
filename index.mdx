@@ -3,21 +3,62 @@ title: "Cirata"
 description: "USDC and EURC treasury dashboard on Arc Testnet. No MetaMask — wallet is auto-created on Google login."
 ---
 
+<Warning>
+  Cirata runs on **Arc Testnet**. Funds shown have no real value.
+</Warning>
+
 # Cirata
 
-Cirata is a web treasury management app for **USDC** and **EURC** on **Arc Testnet**.
+Cirata is a web treasury management app for **USDC** and **EURC** on **Arc Testnet**. You log in with Google, and a wallet is created for you automatically — no MetaMask, no seed phrase, no browser extension.
 
 ## Key Features
 
-- **Treasury** — View balance, inflow/outflow, and performance charts.
-- **Transfer** — Send tokens to a 0x address with confirmation.
-- **Activity** — Transaction history with filters and export.
-- **Settings** — Account preferences and theme.
+<CardGroup cols={2}>
+  <Card title="Treasury" icon="wallet" href="/fitur/saldo">
+    View your USDC and EURC balance, inflow/outflow totals, and performance charts.
+  </Card>
+  <Card title="Transfer" icon="arrow-right-arrow-left" href="/fitur/transfer">
+    Send tokens to any 0x address with a confirmation step.
+  </Card>
+  <Card title="Activity" icon="clock-rotate-left" href="/fitur/aktivitas">
+    Transaction history with filters and CSV/Excel/PDF export.
+  </Card>
+  <Card title="Settings" icon="gear" href="/quickstart">
+    Account preferences, theme, and wallet details.
+  </Card>
+</CardGroup>
 
 ## How It Works
 
-1. Log in via Google.
-2. The system auto-creates a Circle Developer-Controlled wallet for your email.
-3. Use the dashboard to check balance, transfer, and view history.
+<Steps>
+  <Step title="Log in via Google">
+    Open Cirata and click **Sign in with Google**.
+  </Step>
+  <Step title="Wallet is created">
+    The system auto-creates a Circle Developer-Controlled wallet for your email. This takes 1–3 seconds.
+  </Step>
+  <Step title="Use the dashboard">
+    Check your balance, send tokens, and review your transaction history.
+  </Step>
+</Steps>
 
-> ⚠️ Cirata runs on **Arc Testnet**. Funds shown have no real value.
+<Tip>
+  All wallets are managed server-side. You never handle private keys or seed phrases.
+</Tip>
+
+## Who Is It For
+
+- Individuals who want to test USDC/EURC transfers on Arc Testnet.
+- Teams that need a simple treasury view without wallet extensions.
+- Developers exploring Circle Developer-Controlled Wallets.
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Quick Start" icon="rocket" href="/quickstart">
+    Get up and running in five steps.
+  </Card>
+  <Card title="Wallet Security" icon="shield" href="/keamanan/wallet">
+    Learn how your wallet is protected.
+  </Card>
+</CardGroup>

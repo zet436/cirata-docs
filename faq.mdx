@@ -1,41 +1,57 @@
 ---
 title: "FAQ"
-description: "Frequently asked questions."
+description: "Frequently asked questions about Cirata."
 ---
 
-# Frequently Asked Questions
+<Warning>
+  Cirata runs on **Arc Testnet**. Funds shown have no real value.
+</Warning>
 
-## What is Cirata?
+# FAQ
 
-Cirata is a USDC/EURC treasury dashboard on Arc Testnet. Wallets are automatically created on Google login.
+<AccordionGroup>
+  <Accordion title="What is Cirata?">
+    Cirata is a USDC and EURC treasury dashboard on Arc Testnet. Your wallet is created automatically when you log in with Google.
+  </Accordion>
+  <Accordion title="Do I need MetaMask?">
+    No. Your wallet is managed server-side via Circle Developer-Controlled Wallets. No browser extension is required.
+  </Accordion>
+  <Accordion title="Are the funds real?">
+    No. All funds on Arc Testnet have no real value. Cirata is for testing and learning only.
+  </Accordion>
+  <Accordion title="Why is my balance zero?">
+    1. Make sure you are logged in.
+    2. Wait 1–3 seconds after login for wallet provisioning.
+    3. Refresh the page.
+    4. Check if any incoming transactions appear on the Arc block explorer.
+  </Accordion>
+  <Accordion title="How do I export data?">
+    Open the **Activity** menu and click **Export CSV**, **Export Excel**, or **Export PDF**.
+  </Accordion>
+  <Accordion title="What is voice command for?">
+    Filling the transfer form by voice. Press the microphone button on the Transfer page.
+  </Accordion>
+  <Accordion title="Who can use it?">
+    Anyone with a Google account. A wallet is created automatically per email.
+  </Accordion>
+  <Accordion title="How do I receive funds?">
+    Open Treasury, click **Show QR for Receiving**, and share the address or QR code with the sender. Make sure the sender uses Arc Testnet.
+  </Accordion>
+  <Accordion title="Can I set spending limits?">
+    Yes. Go to Treasury → Spending Limits to set per-token transfer caps.
+  </Accordion>
+  <Accordion title="What tokens are supported?">
+    USDC and EURC on Arc Testnet.
+  </Accordion>
+</AccordionGroup>
 
-## Is MetaMask required?
+## Still Have Questions?
 
-No. Wallets are managed server-side via Circle. You don't need to install a wallet extension.
-
-## Are funds real?
-
-No. All funds on Arc Testnet have no real value.
-
-## Why is my balance 0?
-
-1. Make sure you're logged in
-2. Wait 1–3 seconds after login (wallet provisioning)
-3. Refresh the page
-4. Check if there are incoming transactions on Arc Explorer
-
-## How to export data?
-
-Open the **Activity** menu, then click **Export CSV**, **Export Excel**, or **Export PDF**.
-
-## What is voice command for?
-
-Filling in the transfer form via voice. Press the microphone button on the Transfer page.
-
-## Who can use it?
-
-Anyone with a Google account. A wallet is automatically created per email.
-
-## How to receive funds?
-
-Open Treasury → **Show QR for Receiving**, then share the address or QR code with the sender. Make sure the sender uses Arc Testnet.
+<CardGroup cols={2}>
+  <Card title="Quick Start" icon="rocket" href="/quickstart">
+    Get started in five steps.
+  </Card>
+  <Card title="Wallet Security" icon="shield" href="/keamanan/wallet">
+    Learn how your wallet is protected.
+  </Card>
+</CardGroup>
