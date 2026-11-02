@@ -1,27 +1,27 @@
 ---
-title: "Keamanan Wallet"
-description: "Bagaimana Cirata mengelola keamanan wallet pengguna."
+title: "Wallet Security"
+description: "How Cirata manages user wallet security."
 ---
 
-# Keamanan Wallet
+# Wallet Security
 
-## Model Keamanan
+## Security Model
 
-- **Tanpa MetaMask** — Wallet dikelola server-side via Circle Developer-Controlled Wallets.
-- **Auto-provision** — Wallet otomatis dibuat saat login Google. Tidak ada seed phrase yang disimpan di browser.
-- **Server-side policy** — Validasi transaksi dilakukan di server, bukan client.
-- **Session-based** — Akses wallet terikat pada session login.
+- **No MetaMask** — Wallets are managed server-side via Circle Developer-Controlled Wallets.
+- **Auto-provision** — Wallet is automatically created on Google login. No seed phrase is stored in the browser.
+- **Server-side policy** — Transaction validation is performed on the server, not the client.
+- **Session-based** — Wallet access is tied to the login session.
 
-## Jaringan
+## Network
 
 - **Arc Testnet** (Chain ID 5042002)
 - RPC: `https://rpc.testnet.arc.io`
-- Gas fee dibayar dengan USDC (native gas token di Arc)
+- Gas fee paid with USDC (native gas token on Arc)
 
-## Catatan Penting
+## Important Notes
 
-- Dana di Arc Testnet **tidak memiliki nilai riil**.
-- Jangan kirim aset dari jaringan lain ke alamat Cirata — dapat menyebabkan kehilangan dana.
-- Circle API key dan entity secret disimpan server-side, tidak diekspos ke browser.
+- Funds on Arc Testnet **have no real value**.
+- Do not send assets from other networks to Cirata addresses — it may cause loss of funds.
+- Circle API key and entity secret are stored server-side, not exposed to the browser.
 
-> Cirata sedang dalam fase pengembangan. Selalu verifikasi transaksi di [Arc Explorer](https://testnet.arcscan.app) sebelum menganggapnya final.
+> Cirata is in development phase. Always verify transactions on [Arc Explorer](https://testnet.arcscan.app) before considering them final.
